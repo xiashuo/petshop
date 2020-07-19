@@ -1,0 +1,162 @@
+﻿{% extends 'base.html' %}
+{% block title %}
+	<title></title>
+{% endblock %}
+{% block main %}
+	<main id="main">
+			<section class="hero-sec bg-full" style="background-image:url(../static/images/img33.jpg);">
+				<div class="caption">
+					<h1 class="heading text-center">Checkout</h1>
+				</div>
+			</section>
+			<section class="check-sec container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="txt-wrap">
+							<p>Returning customer? <a href="#">Click here to login</a></p>
+						</div>
+						<div class="txt-wrap">
+							<p>Have a coupon?  <a href="#">Click here to enter your code</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<form class="checkout-form text-left" action="#">
+							<fieldset>
+								<div class="row">
+									<div class="col-xs-12 col-sm-6">
+										<h2>Billing Details</h2>
+										<div class="form-group">
+											<div class="holder">
+												<div class="col">
+													<label>First Name <span class="sign">*</span></label>
+													<input class="form-control element-block" placeholder="" type="text">
+												</div>
+												<div class="col">
+													<label>Last Name<span class="sign">*</span></label>
+													<input class="form-control element-block" placeholder="" type="text">
+												</div>
+											</div>
+											<label>Company Name<span class="sign">*</span></label>
+											<input class="form-control " placeholder="" type="text">
+											<label>Address 1<span class="sign">*</span></label>
+											<input class="form-control" placeholder="" type="text">
+											<label>Address 2 [optional}</label>
+											<input class="form-control" placeholder="" type="text">
+											<div class="holder">
+												<div class="col">
+													<label>Email Address<span class="sign">*</span></label>
+													<input class="form-control element-block" placeholder="" type="text">
+												</div>
+												<div class="col">
+													<label>Phone<span class="sign">*</span></label>
+													<input class="form-control element-block" placeholder="" type="text">
+												</div>
+											</div>
+											<div class="holder">
+												<div class="col">
+													<label>Town/City<span class="sign">*</span></label>
+													<input class="form-control element-block" placeholder="" type="text">
+												</div>
+												<div class="col">
+													<label>Pin code/Zip<span class="sign">*</span></label>
+													<input class="form-control element-block" placeholder="" type="text">
+												</div>
+											</div>
+											<label>Country<span class="sign">*</span></label>
+											<select class="form-control">
+												<option value="0">United States</option>
+												<option value="1">United States</option>
+												<option value="2">United States</option>
+											</select>
+										</div>
+										<div class="form-group">
+										    <input type="checkbox" class="checkbox">
+										    <span class="check-holder">Create an Account?</span>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-6">
+										<h2>Additional Info</h2>
+										<div class="form-group">
+											<label>Other Notes</label>
+											<textarea class="form-control" placeholder="Notes about your order, e.g: your delivery"></textarea>
+										</div>
+									</div>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<table class="table table-bordered">
+							<caption>Your Order</caption>
+							<thead>
+								<tr>
+									<th>Products</th>
+									<th>Total</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Pets Puriest  × 1</td>
+									<td>34.00</td>
+								</tr>
+								<tr>
+									<td>Nutri Vitamin+ × 1</td>
+									<td>$40.00</td>
+								</tr>
+								<tr class="total">
+									<td>Sub-Total</td>
+									<td class="clr">$74.00</td>
+								</tr>
+								<tr class="total">
+									<td>Total</td>
+									<td class="clr">$74.00</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="payment-holder">
+							<h2>Payment Method</h2>
+							<form  class="payment-form" action="#">
+								<div class="form-group">
+									<label>
+										<input type="checkbox" class="check" name="checkbox" value="value" checked>Cheque Payment
+									</label>
+									<p>Please send your cheque to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
+								</div>
+								<div class="form-group">
+									<label>
+										<input type="checkbox" class="check" name="checkbox" value="value">Direct Transfer
+									</label>
+								</div>
+								<div class="form-group block">
+									<label>
+										<input type="checkbox" class="check" name="checkbox" value="value">Paypal
+										<img src="../static/images/img49.jpg" class="img-responsive" alt="payment-method-image">
+										<a href="#">What is Paypal?</a>
+									</label>
+								</div>
+								<input type="submit" value="place your order" class="text-uppercase submit-btn">
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="callout" style="background-image:url(../static/images/img26.jpg);">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6">
+							<h2>Get 50% offer for all pet products</h2>
+						</div>
+						<div class="col-xs-12 col-sm-6">
+							<a class="btn-primary text-uppercase text-center lg-round" href="#">coupon code : PETTY1234</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+{% endblock %}
+
+

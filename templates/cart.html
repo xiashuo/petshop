@@ -1,0 +1,100 @@
+﻿{% extends 'base.html' %}
+{% block title %}
+<title>购物车</title>
+{% endblock %}
+
+{% block main %}
+	<main id="main">
+    <section class="hero-sec bg-full" style="background-image:url(../static/images/img33.jpg);">
+        <div class="caption">
+            <h1 class="heading text-center">Cart</h1>
+        </div>
+    </section>
+    <section class="cart-content-block container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="table-responsive">
+                    <table class="table cart-data-table">
+                        <thead>
+                        <tr>
+                            <th class="Product text-center">Products</th>
+                            <th class="price text-center">Price</th>
+                            <th class="Quantity text-center">Quantity</th>
+                            <th class="Total text-center">Total</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="Product">
+                                <a href="#" class="btn-remove fa fa-times"></a>
+                                <div class="img-holder">
+                                    <img src="../static/images/img47.jpg" alt="image description" class="img-resposnive">
+                                </div>
+                                <span class="descr-wrap">Pets Puriest</span>
+                            </td>
+                            <td class="price"><span><strong class="price element-block"> $34.00</strong></span></td>
+                            <td class="Quantity">
+                                <input type="number" class="form-control text-center" min="0" value="1">
+                            </td>
+                            <td class="Total"><strong class="element-block price"> $34.00</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="Product">
+                                <a href="#" class="btn-remove fa fa-times"></a>
+                                <div class="img-holder">
+                                    <img src="../static/images/img48.jpg" alt="image description" class="img-responsive">
+                                </div>
+                                <span class="descr-wrap">Nutri Vitamin+</span>
+                            </td>
+                            <td class="price"><span><strong class="price element-block"> $34.00</strong></span></td>
+                            <td class="Quantity">
+                                <input type="number" class="form-control text-center" min="0" value="1">
+                            </td>
+                            <td class="Total"><strong class="element-block price"> $34.00</strong></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-xs-12 coupon-wrap">
+                <div class="coupon-code pull-left">
+                    <input class="form-control" placeholder="Coupon Code" type="text">
+                    <button type="submit" class="btn-primary text-center text-uppercase  pull-right">apply code</button>
+                </div>
+                <a href="#" class="btn-primary updatebtn text-center text-uppercase pull-right">update cart</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="table-wrap pull-right">
+                    <h2>Cart Total</h2>
+                    <ul class="list-unstyled cart-total">
+                        <li>
+                            <strong class="title pull-left">Sub-Total</strong>
+                            <strong class="price pull-right">$74.00</strong>
+                        </li>
+                        <li>
+                            <strong class="title pull-left">Total</strong>
+                            <strong class="price pull-right">$74.00</strong>
+                        </li>
+                    </ul>
+                    <a href="checkout.html" class="btn-primary text-center text-uppercase">proceed to checkout</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="callout" style="background-image:url(../static/images/img26.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <h2>Get 50% offer for all pet products</h2>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <a class="btn-primary text-uppercase text-center lg-round" href="#">coupon code : PETTY1234</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}
+
